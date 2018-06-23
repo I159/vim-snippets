@@ -157,6 +157,9 @@ snippet _
 # python debugger (pdb)
 snippet pdb
 	__import__('pdb').set_trace()
+# remote pdb
+snippet rpdb
+	__import__('remote_pdb').RemotePdb('0.0.0.0', 5858).set_trace()
 # bpython debugger (bpdb)
 snippet bpdb
 	__import__('bpdb').set_trace()
@@ -166,9 +169,6 @@ snippet ipdb
 # embed ipython itself
 snippet iem
 	__import__('IPython').embed()
-# remote python debugger (rpdb)
-snippet rpdb
-	__import__('rpdb').set_trace()
 # web python debugger (wdb)
 snippet wdb
 	__import__('wdb').set_trace()
