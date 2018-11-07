@@ -446,3 +446,8 @@ snippet numeric "methods for emulating a numeric type" b
 	def __coerce__(self, other):
 		${25:pass}
 	
+snippet abm
+	@abc.abstractmethod
+	def ${0:name}(self):
+		raise NotImplementedError()
+
